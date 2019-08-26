@@ -12,6 +12,7 @@ h1 {
   font-stretch: semi-expanded;
   font-family: "Times New Roman", Times, serif;
   color: orange;
+  top: 20%
   -webkit-text-stroke: 1px black;
    color: black;
    text-shadow:
@@ -41,7 +42,7 @@ h2{
   outline-color: orange;
   outline-width: medium;
   float: left;
-text-align: center;
+  text-align: center;
 }
 #chemlogo{
   position: relative;
@@ -53,80 +54,10 @@ text-align: center;
   float: right;
   text-align: center;
 }
-#menu {
-    margin:0 auto;
-    display: inline-block;
-    list-style:none;
-    padding:0;
-    border-top:1 solid #ccc;
-    border-left:1 solid #ccc;
-    border-bottom:1 solid #ccc;
-    border-radius: 20px;
-}
 
-#menu li {
-    float: left;
-    background-color:#ffc069;
-}
-
-#menu li a {
-    display:block;
-    text-decoration:none;
-    color:#000000;
-    padding: 14px 50px;
-    font-size: 17px;
-    border-right:0px solid #ccc;
-}
-
-#menu li a:hover {
-    color:#ffffff;
-    background-color:#000000;
-}
-.column {
-  float: left;
-  width: 50%
-}
-
-.row:after {
-  content:"";
-  display: table;
-  clear: both;
-}
-
-.container{
-  text-align: center;
-  margin: 0 auto;
-}
 a {
   all: unset;
   text-align: center;
-}
-.menu {
-  overflow: hidden;
-  background-color: #dbe8ff;
-}
-
-.menu a {
-  float: left;
-  display: block;
-  color: #3d495e;
-  text-align: center;
-  padding: 14px 125px;
-  text-decoration: none;
-  font-size: 28px;
-}
-
-.menu a:hover {
-  background-color: #3d495e;
-  color: #f4f6f9;
-}
-.current {
-  background-color: #ff9500;
-  color: #000000;
-}
-
-.menu .icon {
-  display: none;
 }
 .footnote{
   background-color: black;
@@ -150,4 +81,41 @@ footnote{
   height: 25%;
   width: 3.5%;
   top: 5px;
+}
+* {box-sizing: border-box}
+body {font-family: serif;}
+
+.navbar {
+  width: 100%;
+  background-color: #ffc069;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: black;
+  text-decoration: none;
+  font-size: 17px;
+  width: 17.55%;
+  text-align: center;
+}
+
+.navbar a:hover {
+  color:#ffffff;
+  background-color:#000000;
+}
+
+.navbar a.current {
+  background-color: #ff9500;
+  color: #000000;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
 }
