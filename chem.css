@@ -35,8 +35,8 @@ h2{
 }
 #shslogo{
   position: relative;
-  height: 4.5%;
-  width: 4.5%;
+  height: 10%;
+  width: 10%;
   outline-style: inset;
   outline-color: orange;
   outline-width: medium;
@@ -45,8 +45,8 @@ text-align: center;
 }
 #chemlogo{
   position: relative;
-  height: 4.5%;
-  width: 4.5%;
+  height: 10%;
+  width: 10%;
   outline-style: inset;
   outline-color: orange;
   outline-width: medium;
