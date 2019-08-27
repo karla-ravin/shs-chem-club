@@ -20,8 +20,59 @@
         <a href="contact.html">Contact Us</a>
     </div>
     <p></p>
-<h5>
-  <br><b>Our sponsor is the lovely <i>Mrs. Kaiser!</i> (room 602)</b></br>
+    <style>
+    .collapsible {
+      background-color: #a600ff;
+      color: white;
+      cursor: pointer;
+      padding: 18px;
+      width: 200px;
+      border-radius: 30px;
+      border: none;
+      text-align: center;
+      outline: none;
+      font-size: 15px;
+      font-family: serif;
+    }
+
+    .active{
+      background-color: #a600ff;
+    }
+
+    .collapsible:hover {
+      background-color: #d380ff;
+    }
+
+    .collapsible:after {
+      content: '';
+      color: white;
+      font-weight: bold;
+      float: right;
+      margin-left: 5px;
+    }
+
+    .active:after {
+      content: "";
+      background-color: #a600ff;
+
+    }
+
+    .content {
+      padding: 0 18px;
+      max-height: 0;
+      overflow: hidden;
+      width: 60%;
+      transition: max-height 0.2s ease-out;
+      background-color: #f4deff;
+      text-align: center;
+      display: block;
+      margin:auto;
+      border-radius: 30px;
+      font-family: serif;
+    }
+    </style>
+<h2>
+  <br><b>Our sponsor is the lovely <i>Mrs. Kaiser!</i></b></br></h2><h5><br>Room 602</br>
   <p></p>
   <br><u><b>Current Members:</b></u></br>
   <br>Anthony De Paz</br>
@@ -50,13 +101,13 @@
 <p></p>
 <centered><button class="collapsible">Club Positions</button>
 <div class="content">
-  <h5><br>President: Karla</br>
-    <br>Vice President and Social Media: Jessie Penafiel</br>
-    <br>Vice President: Rudra Bhavsar</br>
-    <br>STEM Captain: Brendan Doffou</br>
-    <br>Photos: Julianna Bosco</br>
-    <br>Secretary: Open</br>
-    <br>Treasurer: Open</br>
+  <h5><p>President: Karla Ravin</p>
+    <p>Vice President and Social Media: Jessie Penafiel</p>
+    <p>Vice President: Rudra Bhavsar</p>
+    <p>STEM Captain: Brendan Doffou</p>
+    <p>Photos: Julianna Bosco</p>
+    <p>Secretary: Open</p>
+    <p>Treasurer: Open</p>
   </h5>
 </div></centered>
 <p></p>
@@ -87,8 +138,8 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 400px;
-  max-height: 400px;
+  max-width: 600px;
+  max-height: 600px;
   position: relative;
   margin: auto;
 }
@@ -156,7 +207,7 @@ img {vertical-align: middle;}
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active1, .dot:hover {
   background-color: #717171;
 }
 
@@ -240,10 +291,10 @@ function showSlides(n) {
       slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
+      dots[i].className = dots[i].className.replace(" active1", "");
   }
   slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+  dots[slideIndex-1].className += " active1";
 }
 </script>
 
