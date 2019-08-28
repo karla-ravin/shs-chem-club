@@ -31,7 +31,7 @@
       border: none;
       text-align: center;
       outline: none;
-      font-size: 15px;
+      font-size: 17px;
       font-family: serif;
     }
 
@@ -70,64 +70,123 @@
       border-radius: 30px;
       font-family: serif;
     }
+    /* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
     </style>
-<h2>
-  <br><b>Our sponsor is the lovely <i>Mrs. Kaiser!</i></b></br></h2><h5><br>Room 602</br>
-  <p></p>
-  <br><u><b>Current Members:</b></u></br>
-  <br>Anthony De Paz</br>
-  <br>Brendan Doffou</br>
-  <br>Edgar Molina</br>
-  <br>Eric Zheng</br>
-  <br>Giuseppe Pugliese</br>
-  <br>Jack Walsh</br>
-  <br>Jessie Penafiel</br>
-  <br>John Matura</br>
-  <br>Julianna Bosco</br>
-  <br>Karla Ravin</br>
-  <br>Lesley Bello</br>
-  <br>Lizet Garcia</br>
-  <br>Luke Steiner</br>
-  <br>Megan Ward</br>
-  <br>Raul Rosario</br>
-  <br>Rudra Bhavsar</br>
-  <br>Sky</br>
-  <p></p>
-  <br><u><b>Graduated Members:</b></u></br>
+    <h2> Our Stamford High Chemistry Club</h2>
+    <br><h5>The past few years, the chemistry club has been more active in our community, gaining school recognition, participating in field trips, contests, and events, and even assigning club positions. Here you can learn a little bit about who we are.</h5></br>
+
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="members3.jpg" style="width:100%">
+        <div class="text">Fundraising at the Stamford High Holiday Fair (2018)</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="members2.jpg" style="width:100%">
+        <div class="text">STEM Festival in Stamford (2018)</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="members1.jpg" style="width:100%">
+        <div class="text">End of the year outing (2019)</div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      </div>
+      <br>
+
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+      <p></p>
+
+  <h5>Click below to see our current club positions:</h5><br><centered><button class="collapsible">Club Positions</button>
+    <div class="content">
+      <h5><p>President:<br>Karla Ravin</p>
+        <p>Vice President and Social Media:<br>Jessie Penafiel</p>
+        <p>Vice President:<br>Rudra Bhavsar</p>
+        <p>STEM Captain:<br>Brendan Doffou</p>
+        <p>Photos:<br>Julianna Bosco</p>
+        <p>Secretary:<br>Open</p>
+        <p>Treasurer:<br>Open</p>
+      </h5>
+    </div></centered>
+
+<div class="row">
+    <div class="column">
+      <h5>
+        <p><b><u>Our Advisor: Mrs. Kaiser</b></u><br></p> Mrs. Kaiser has always been the sponsor of the chemistry club and has guided us through our highs and lows. She is a chemistry and a sheltered class teacher at Stamford High and even founded the Science Research class. Her room is dedicated to science and helping our community. She is the glue that holds us together!<p></p>
+      </br><img src="kaiserpic.jpg" id="pic"><img src="chempic.jpg" id="pic"> </a>
+      </h5>
+    </div>
+    <div class="column">
+      <h5>
+        <u><b>Current Members:</b></u>
+        <br>Anthony De Paz</br>
+        <br>Brendan Doffou</br>
+        <br>Edgar Molina</br>
+        <br>Eric Zheng</br>
+        <br>Giuseppe Pugliese</br>
+        <br>Jack Walsh</br>
+        <br>Jessie Penafiel</br>
+        <br>John Matura</br>
+        <br>Julianna Bosco</br>
+        <br>Karla Ravin</br>
+        <br>Lesley Bello</br>
+        <br>Lizet Garcia</br>
+        <br>Luke Steiner</br>
+        <br>Megan Ward</br>
+        <br>Raul Rosario</br>
+        <br>Rudra Bhavsar</br>
+        <br>Sky</br>
+        <p></p>
+        </h5>
+    </div>
+  </div>
+
+<h5><br><u><b>Graduated Members:</b></u></br>
   <br><i>Class of 2019:</i> Greg Marantz, Ronald Bear</br>
   <br><i>Class of 2018:</i> Alan Alteus, Aniruddh Gunupuru, Bevon Walford,</br><br> Daniel Slipyi, Richie Dong, Vedant Gannu, Vincent Sato</br>
   <br><i>Class of 2017:</i> George Karakyklas, Jasper Cruz</br>
-</h5>
-<p></p>
-<centered><button class="collapsible">Club Positions</button>
-<div class="content">
-  <h5><p>President: Karla Ravin</p>
-    <p>Vice President and Social Media: Jessie Penafiel</p>
-    <p>Vice President: Rudra Bhavsar</p>
-    <p>STEM Captain: Brendan Doffou</p>
-    <p>Photos: Julianna Bosco</p>
-    <p>Secretary: Open</p>
-    <p>Treasurer: Open</p>
   </h5>
-</div></centered>
-<p></p>
+  <p></p>
 
 <script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    }
-  });
-}
-</script>
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+    });
+  }
+  </script>
 
 <!-- SLIDESHOW ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 <style>
@@ -142,6 +201,7 @@ img {vertical-align: middle;}
   max-height: 600px;
   position: relative;
   margin: auto;
+  margin-bottom: 10px;
 }
 
 /* Next & previous buttons */
@@ -177,11 +237,11 @@ img {vertical-align: middle;}
 
 /* Caption text */
 .text {
-  color: blue;
+  color: gray;
   font-size: 15px;
+  background-color: white;
   padding: 8px 12px;
   position: absolute;
-  bottom: 8px;
   width: 100%;
   text-align: center;
 }
@@ -235,39 +295,6 @@ img {vertical-align: middle;}
 }
 </style>
 </head>
-<body>
-
-<div class="slideshow-container">
-
-<div class="mySlides fade">
-  <div class="numbertext">1 / 3</div>
-  <img src="members1.jpg" style="width:100%">
-  <div class="text">End of the year outing (2019)</div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">2 / 3</div>
-  <img src="members2.jpg" style="width:100%">
-  <div class="text">STEM Festival in Stamford (2018)</div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">3 / 3</div>
-  <img src="members3.jpg" style="width:100%">
-  <div class="text">Fundraising at the Stamford High Holiday Fair (2018)</div>
-</div>
-
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-</div>
 
 <script>
 var slideIndex = 1;
@@ -301,10 +328,10 @@ function showSlides(n) {
 
 <p></p><p><center><div class="footnote">
   <a href="https://www.instagram.com/shs.chem.club/" target="_blank"><img id="instalogo" src="instagram_logo.jpg">
-  <br><a href="https://www.instagram.com/shs.chem.club/" target="_blank" id="h3">Follow us on Instagram!</a></br>
+  <a href="https://www.instagram.com/shs.chem.club/" target="_blank" id="h3">Follow us on Instagram!</a></br>
   <br><a href="mailto:shschemclub@yahoo.com" target="_blank" id="email"><u>shschemclub@yahoo.com</u></a></br>
   <br><footnote class="footnote_text">
-    55 Strawberry Hill Avenue, Stamford, CT 06902
+    55 Strawberry Hill Avenue, Room 602, Stamford, CT 06902
     <br>All rights reserved to Karla Ravin</br>
   </footnote>
 </div></center></p>
