@@ -74,7 +74,7 @@
         background-color: #ff3d3d;
         color: black;
         cursor: pointer;
-        padding: 18px;
+        padding: 35px;
         width: 90%;
         border-radius: 5px;
         border: none;
@@ -162,11 +162,85 @@
     overflow: hidden;
     width: 85%;
     transition: max-height 0.2s ease-out;
-    background-color: white;
+    background-color: #ffc7e4;
     text-align: center;
     display: block;
     margin:auto;
     color: black;
+  }
+</style>
+<style>
+  * {box-sizing:border-box}
+  .mySlides {display:none}
+
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 500px;
+    max-height: 500px;
+    position: relative;
+    margin: auto;
+  }
+
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev{
+    left:0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
   }
 </style>
 
@@ -177,14 +251,121 @@
     <div class="column">
       <button class="collapsible">Showcasing Our Experiments</button>
         <div class="content">
-        <p><h5>text</h5></p><p></P>
+        <p><h5>Here you can see our most popular experiment: slime. We both sold and gave samples to the community in efforts to teach kids science and encourage them to pursue it.</h5></p><p></P>
           <button class="pinkcollapsible">STEM Festival</button>
             <div class="pinkcontent">
-            <h5>text</h5>
+            <h5>For years, the chemistry club has participated in Stamford's annual STEM (Science, Technology, Engineering, Mathematics) Festival at Mill River Park. In May 2018, we made slime with the kids who came, and it was the most popular booth! Later, in September 2018, we chose to experiment with another recipe of slime, and that year there were multiple booths taking after our lead! Eveyerone enjoyed it; the kids, the parents, and us. We plan to continue with STEM Fest and earn more volunteering hours!
+              <div id="slideshow1" class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 5</div>
+                  <img src="stemfest1.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 5</div>
+                  <img src="members2.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 5</div>
+                  <img src="stemfest2.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext">4 / 5</div>
+                  <img src="slime5.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext">5 / 5</div>
+                  <img src="slime6.jpg" style="width:100%">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1,slideshow1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, slideshow1)">&#10095;</a>
+
+                <div style="text-align:center">
+                  <span onclick="currentSlide(1, slideshow1)"></span>
+                  <span  onclick="currentSlide(2, slideshow1)"></span>
+                  <span class="dot" </span>
+                </div>
+                </div>
+                <br>
+            </h5>
           </div><p></p>
           <button class="pinkcollapsible">Holiday Fair</button>
             <div class="pinkcontent">
-            <p><h5>text</h>
+            <p><h5>Sponsored by the Class of 2020, the Chemistry Club participated in the December 2018 Holiday Fair at Stamford High, selling three of our experiments including slime, bath bombs, and soap, as well as some nifty pencils and lollipops. Kudos to the members that always help out! We made $200 that day.
+              <div id="slideshow2" class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 11</div>
+                  <img src="holidayfair.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 11</div>
+                  <img src="members3.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 11</div>
+                  <img src="bathbomb1.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext">4 / 11</div>
+                  <img src="slime1.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext">5 / 11</div>
+                  <img src="slime4.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext">6 / 11</div>
+                  <img src="slime2.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext">7 / 11</div>
+                  <img src="slime3.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext">8 / 11</div>
+                  <img src="slime11.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext">9 / 11</div>
+                  <img src="slime22.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext">10 / 11</div>
+                  <img src="soap1.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext">11 / 11</div>
+                  <img src="soap11.jpg" style="width:100%">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1, this.parentNode)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, this.parentNode)">&#10095;</a>
+
+
+                <div style="text-align:center">
+                  <span onclick="currentSlide(1, slideshow2)"></span>
+                  <span onclick="currentSlide(2, slideshow2)"></span>
+                  <span onclick="currentSlide(3, slideshow2)"></span>
+                </div>
+                </div>
+                <br>
+            </h5>
               </div>
               <p>
           </div>
@@ -202,24 +383,26 @@
     <div class="column">
       <button class="collapsible">Videos</button>
         <div class="content">
-          <p><h5>text</h5><p></p>
+          <p><h5>Here you can find the two videos filmed during the 2018-2019 school year with the chem club.</h5><p></p>
             <button class="pinkcollapsible">LANXESS</button>
               <div class="pinkcontent">
                 <p><h5>
-                  text
-                  <p><iframe src="https://drive.google.com/file/d/1J3ftNTZjmwAkc_eeZC63foGwt0XxrFez/view"></iframe>
+                  This competition was discovered by two members of our club, and we filmed a video to get us the chance to win up to $5,000 for lab improvements! The whole school ended up voting for us, but sadly we did not win (even though we deserved it, the other schools had pristine labds compared to ours!)
+                  <p><iframe src="https://www.youtube.com/embed/iJfHhSknaXA" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <p><br><u><a href="http://www.lanxessfactor.com/#" target="_blank"> click here to know more </a></u></br>
                 </h5>
                 </div><p></p>
             <button class="pinkcollapsible">Lip Dub</button>
               <div class="pinkcontent">
                 <p><h5>
-                  text
-                  <p><iframe src="https://www.youtube.com/watch?v=Nu0PIG5V5e0"></iframe>
+                  To rival Westhill's lip dub, Stamford High created a lip dub and the chemistry club played a part in the 5th floor hallway in early 2019.
+                  <p><iframe src="https://www.youtube.com/embed/lzz5oayIakE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p><br><u><a href="https://www.youtube.com/watch?v=drULbA2YlZo" target="_blank">click here to see Westhill's lip dub from 2018</a></u><br>
                 </h5>
               </div>
               <p>
             </div>
-            <button class="collapsible">Club Fairs</button>
+      <button class="collapsible">Club Fairs</button>
               <div class="content">
                 <p><h5>text</h5><p></p>
                   <button class="pinkcollapsible">Freshmen Orientation</button>
@@ -245,12 +428,11 @@
       if (content.style.maxHeight){
         content.style.maxHeight = null;
       } else {
-        content.style.maxHeight = 3*content.scrollHeight + "px";
+        content.style.maxHeight = 10*content.scrollHeight + "px";
       }
     });
   }
   </script>
-
 <script>
   var col = document.getElementsByClassName("pinkcollapsible");
   var i;
@@ -265,6 +447,43 @@
         pinkcontent.style.maxHeight = pinkcontent.scrollHeight + "px";
       }
     });
+  }
+  </script>
+<script>
+  var slideshow1 = document.getElementById("slideshow1");
+  slideshow1.currentSlideIndex = 1;
+  showSlides(slideshow1.currentSlideIndex, slideshow1);
+
+  var slideshow2 = document.getElementById("slideshow2");
+  slideshow2.currentSlideIndex = 1;
+  showSlides(slideshow2.currentSlideIndex, slideshow2);
+
+
+  function plusSlides(n, slideshow) {
+    showSlides(slideshow.currentSlideIndex += n, slideshow);
+  }
+
+  function currentSlide(n, slideshow) {
+    showSlides(slideshow.currentSlideIndex = n, slideshow);
+  }
+
+  function showSlides(n, slideshow) {
+
+
+
+    var i;
+    var slides = slideshow.getElementsByClassName("mySlides");
+    var dots = slideshow.getElementsByClassName("dot");
+    if (n > slides.length) {slideshow.currentSlideIndex = 1}
+    if (n < 1) {slideshow.currentSlideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" dactive", "");
+    }
+    slides[slideshow.currentSlideIndex-1].style.display = "block";
+    dots[slideshow.currentSlideIndex-1].className += " dactive";
   }
   </script>
 
