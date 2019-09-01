@@ -18,16 +18,255 @@
         <a href="apparel.html">Apparel</a>
         <a href="contact.html">Contact Us</a>
     </div>
-    <p></p>
+      <p></p>
+<style>
+        * {
+          box-sizing: border-box;
+        }
+
+        .header {
+          text-align: center;
+          padding: 32px;
+        }
+
+        .row {
+          display: -ms-flexbox; /* IE10 */
+          display: flex;
+          -ms-flex-wrap: wrap; /* IE10 */
+          flex-wrap: wrap;
+          padding: 0 4px;
+        }
+
+        /* Create four equal columns that sits next to each other */
+        .column {
+          -ms-flex: 25%; /* IE10 */
+          flex: 25%;
+          max-width: 50%;
+          padding: 0 4px;
+        }
+
+        .column img {
+          margin-top: 8px;
+          vertical-align: middle;
+          width: 100%;
+        }
+
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        @media screen and (max-width: 800px) {
+          .column {
+            -ms-flex: 50%;
+            flex: 50%;
+            max-width: 50%;
+          }
+        }
+
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+          .column {
+            -ms-flex: 100%;
+            flex: 100%;
+            max-width: 100%;
+          }
+        }
+    </style>
+<style>
+      .collapsible {
+        background-color: #ff3d3d;
+        color: black;
+        cursor: pointer;
+        padding: 18px;
+        width: 90%;
+        border-radius: 5px;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 19px;
+        font-family: serif;
+      }
+
+      .active{
+        background-color: #ff3d3d;
+      }
+
+      .collapsible:hover {
+        background-color: #ff5757;
+      }
+
+      .collapsible:after {
+        content: '\002B';
+        color: black;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+      }
+
+      .active:after {
+        content: "\002D";
+      }
+
+      .content {
+        padding: 0 18px;
+        max-height: 0;
+        overflow: hidden;
+        width: 90%;
+        transition: max-height 0.2s ease-out;
+        background-color: #ffa3bc;
+        text-align: center;
+        display: block;
+        margin:auto;
+        border-radius: 5px;
+        color: black;
+      }
+      button{
+        margin:10px;
+      }
+    </style>
+<style>
+  .pinkcollapsible {
+    background-color: #ff3d9e;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 85%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 19px;
+    font-family: serif;
+  }
+
+  .pinkactive{
+    background-color: #ff3d9e;
+  }
+
+  .pinkcollapsible:hover {
+    background-color: #ffc7e4;
+  }
+
+  .pinkcollapsible:after {
+    content: '\002B';
+    color: black;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+
+  .pinkactive:after {
+    content: "\002D";
+
+  }
+
+  .pinkcontent {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    width: 85%;
+    transition: max-height 0.2s ease-out;
+    background-color: white;
+    text-align: center;
+    display: block;
+    margin:auto;
+    color: black;
+  }
+</style>
+
 <h2>Events</h2>
   <br><h5> Over the past year, we've done an incredible amount of community service, activities, parties, and competitions. Here you can take a look at the fun events we do that don't include our weekly experiments!</h5><br>
-  <br>RED/PINK: Holiday Fair
-</br><br>STEM fest
-</br><br>Engineering Tomorrow
-</br><br>Lipdub
-</br><br>LANXESS
-</br><br>Freshmen orientation
-</h2>
+
+<div class="row">
+    <div class="column">
+      <button class="collapsible">Showcasing Our Experiments</button>
+        <div class="content">
+        <p><h5>text</h5></p><p></P>
+          <button class="pinkcollapsible">STEM Festival</button>
+            <div class="pinkcontent">
+            <h5>text</h5>
+          </div><p></p>
+          <button class="pinkcollapsible">Holiday Fair</button>
+            <div class="pinkcontent">
+            <p><h5>text</h>
+              </div>
+              <p>
+          </div>
+      <button class="collapsible">Field Trips</button>
+        <div class="content">
+          <p><h5>text</h5><p></p>
+            <button class="pinkcollapsible">Engineering Tomorrow</button>
+              <div class="pinkcontent">
+                <p><h5>text</h5>
+                </div>
+                <p>
+              </div>
+              <p>
+            </div>
+    <div class="column">
+      <button class="collapsible">Videos</button>
+        <div class="content">
+          <p><h5>text</h5><p></p>
+            <button class="pinkcollapsible">LANXESS</button>
+              <div class="pinkcontent">
+                <p><h5>
+                  text
+                  <p><iframe src="https://drive.google.com/file/d/1J3ftNTZjmwAkc_eeZC63foGwt0XxrFez/view"></iframe>
+                </h5>
+                </div><p></p>
+            <button class="pinkcollapsible">Lip Dub</button>
+              <div class="pinkcontent">
+                <p><h5>
+                  text
+                  <p><iframe src="https://www.youtube.com/watch?v=Nu0PIG5V5e0"></iframe>
+                </h5>
+              </div>
+              <p>
+            </div>
+            <button class="collapsible">Club Fairs</button>
+              <div class="content">
+                <p><h5>text</h5><p></p>
+                  <button class="pinkcollapsible">Freshmen Orientation</button>
+                    <div class="pinkcontent">
+                      <p><h5>text</h5>
+                      </div>
+                      <p>
+                    </div>
+                    <p>
+                  </div>
+          </div>
+
+<h5>By participating in our events, members earn volunteering hours and fundraise for the club! In addition to these activities, we have parties on days of scientific achievement, such as Mole Day. We are open to and looking forward to all of the new members' contributions and suggestions!</h5>
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = 3*content.scrollHeight + "px";
+      }
+    });
+  }
+  </script>
+
+<script>
+  var col = document.getElementsByClassName("pinkcollapsible");
+  var i;
+
+  for (i = 0; i < col.length; i++) {
+    col[i].addEventListener("click", function() {
+      this.classList.toggle("pinkactive");
+      var pinkcontent = this.nextElementSibling;
+      if (pinkcontent.style.maxHeight){
+        pinkcontent.style.maxHeight = null;
+      } else {
+        pinkcontent.style.maxHeight = pinkcontent.scrollHeight + "px";
+      }
+    });
+  }
+  </script>
 
 
 <p></p><p><center><div class="footnote">
@@ -36,6 +275,6 @@
   <br><a href="mailto:shschemclub@yahoo.com" target="_blank" id="email"><u>shschemclub@yahoo.com</u></a></br>
   <br><footnote class="footnote_text">
     55 Strawberry Hill Avenue, Room 602, Stamford, CT 06902
-    <br>All rights reserved to Karla Ravin</br>
+    <br>Created by club President Karla Ravin</br>
   </footnote>
 </div></center></p>

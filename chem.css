@@ -136,6 +136,24 @@ body {font-family: serif;}
     text-align: left;
   }
 }
+#year{
+  font-size: 45px;
+  font-weight: bold;
+  font-style: normal;
+  font-variant: small-caps;
+  font-stretch: semi-expanded;
+  font-family: "Times New Roman", Times, serif;
+  color: orange;
+  top: 20%
+  -webkit-text-stroke: 1px black;
+   color: black;
+   text-shadow:
+       2px 2px 0 orange,
+     -2px -2px 0 orange,
+      2px -2px 0 orange,
+      -2px 2px 0 orange,
+       2px 2px 0 orange;
+    text-decoration: none;}
 h5{
   font-size: 17px;
   text-align: center;
@@ -150,4 +168,8 @@ br{
   display: block; /* makes it have a width */
   content: ""; /* clears default height */
   margin-top: 1px;
+}
+iframe{
+  max-width: 300px;
+  max-height: 200px;
 }
