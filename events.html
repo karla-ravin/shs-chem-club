@@ -23,6 +23,10 @@
         * {
           box-sizing: border-box;
         }
+        body{
+          font-family: sans-serif;
+
+        }
 
         .header {
           text-align: center;
@@ -71,7 +75,7 @@
     </style>
 <style>
       .collapsible {
-        background-color: #ff3d3d;
+        background-color: #ff9500;
         color: black;
         cursor: pointer;
         padding: 35px;
@@ -81,15 +85,16 @@
         text-align: left;
         outline: none;
         font-size: 19px;
-        font-family: serif;
+        font-family: sans-serif;
       }
 
       .active{
-        background-color: #ff3d3d;
+        background-color: #ff9500;
       }
 
       .collapsible:hover {
-        background-color: #ff5757;
+        background-color: black;
+        color:white;
       }
 
       .collapsible:after {
@@ -110,7 +115,7 @@
         overflow: hidden;
         width: 90%;
         transition: max-height 0.2s ease-out;
-        background-color: #ffa3bc;
+        background-color: #ffebc4;
         text-align: center;
         display: block;
         margin:auto;
@@ -119,11 +124,13 @@
       }
       button{
         margin:10px;
+        font-family: sans-serif;
+
       }
     </style>
 <style>
   .pinkcollapsible {
-    background-color: #ff3d9e;
+    background-color: #ffa36e;
     color: black;
     cursor: pointer;
     padding: 18px;
@@ -132,15 +139,16 @@
     text-align: left;
     outline: none;
     font-size: 19px;
-    font-family: serif;
+    font-family: sans-serif;
   }
 
   .pinkactive{
-    background-color: #ff3d9e;
+    background-color: #ffa36e;
   }
 
   .pinkcollapsible:hover {
-    background-color: #ffc7e4;
+    background-color: black;
+    color:white;
   }
 
   .pinkcollapsible:after {
@@ -162,7 +170,7 @@
     overflow: hidden;
     width: 85%;
     transition: max-height 0.2s ease-out;
-    background-color: #ffc7e4;
+    background-color: #ffa36e;
     text-align: center;
     display: block;
     margin:auto;
@@ -170,6 +178,10 @@
   }
 </style>
 <style>
+  body{
+    font-family: sans-serif;
+
+  }
   * {box-sizing:border-box}
   .mySlides {display:none}
 
@@ -371,10 +383,45 @@
           </div>
       <button class="collapsible">Field Trips</button>
         <div class="content">
-          <p><h5>text</h5><p></p>
+          <p><h5>With our newly earned money, we want to start going on field trips and having end of the year outings. This past school year, we started with just that by going to Greenwich and also goingout to Bedford Thai on our last meeting!</h5><p></p>
             <button class="pinkcollapsible">Engineering Tomorrow</button>
               <div class="pinkcontent">
-                <p><h5>text</h5>
+                <p><h5>
+                  Engineering Tomorrow is an organization that aims to increase the amount of women and minorities in STEM fields. Stamford High's chem club was the first public school the organization has worked with, and we went to the Bruce Museum in Greenwich to study windmills and create some ourselves! We plan to continue working with these amazing people and our chaperones Mrs. Kaiser, Dr. DelGiudice, and Mrs. Downer.
+                  <div id="slideshow3" class="slideshow-container">
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 4</div>
+                      <img src="ET2.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 4</div>
+                      <img src="ET1.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">3 / 4</div>
+                      <img src="ET3.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">4 / 4</div>
+                      <img src="ET4.jpg" style="width:100%">
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1, this.parentNode)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, this.parentNode)">&#10095;</a>
+
+
+                    <div style="text-align:center">
+                      <span onclick="currentSlide(1, slideshow3)"></span>
+                      <span onclick="currentSlide(2, slideshow3)"></span>
+                      <span onclick="currentSlide(3, slideshow3)"></span>
+                    </div>
+                    </div>
+                    <br>
+                </h5>
                 </div>
                 <p>
               </div>
@@ -457,6 +504,10 @@
   var slideshow2 = document.getElementById("slideshow2");
   slideshow2.currentSlideIndex = 1;
   showSlides(slideshow2.currentSlideIndex, slideshow2);
+
+  var slideshow3 = document.getElementById("slideshow3");
+  slideshow3.currentSlideIndex = 1;
+  showSlides(slideshow3.currentSlideIndex, slideshow3);
 
 
   function plusSlides(n, slideshow) {
