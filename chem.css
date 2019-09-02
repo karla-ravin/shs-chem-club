@@ -119,8 +119,8 @@ body {font-family: serif;}
 }
 
 .navbar a:hover {
-  color:#ffffff;
-  background-color:#000000;
+  color:black;
+  background-color:#ff9500;
 }
 
 .navbar a.current {
