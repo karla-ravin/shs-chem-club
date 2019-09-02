@@ -80,13 +80,13 @@ a {
   bottom: 1%;
   position: relative;
   border-radius: 5px;
-  text-align: left;
+  margin:auto;
 }
 .footnote_text{
   position: relative;
-  text-align: left;
   bottom: 10%;
   color: gray;
+  margin:auto;
 }
 footnote{
   color: gray;
@@ -100,6 +100,12 @@ footnote{
 }
 * {box-sizing: border-box}
 body {font-family: serif;}
+h7{
+  font-size: 30px;
+  font-variant: small-caps;
+  color:black;
+  font-family: sans-serif;
+}
 /* NAVIGATION BAR ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .navbar {
   width: 100%;
