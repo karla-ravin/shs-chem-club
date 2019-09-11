@@ -101,7 +101,7 @@
 
       .collapsible:after {
         content: '\002B';
-        color: black;
+        color: white;
         font-weight: bold;
         float: right;
         margin-left: 5px;
@@ -155,7 +155,7 @@
 
   .pinkcollapsible:after {
     content: '\002B';
-    color: black;
+    color: #ffebc4;
     font-weight: bold;
     float: right;
     margin-left: 5px;
@@ -440,7 +440,7 @@
                   <script type="text/javascript">
                   var mygallery=new fadeSlideShow({
                    wrapperid: "imageslideshow1", //ID of blank DIV on page to house Slideshow
-                   dimensions: [20, 20], //width/height of gallery in pixels. Should reflect dimensions of largest image (www.2createawebsites.com)
+                   dimensions: [350, 375], //width/height of gallery in pixels. Should reflect dimensions of largest image (www.2createawebsites.com)
                      imagearray:  [
                      ["ET2.jpg"],
                      ["ET1.jpg"],
@@ -455,14 +455,10 @@
                     })
                    </script>
                    <style type="text/css">
-                   #imageslideshow1{
-                     width: 20px;
-                     height:200px;
-                   }
                   @media (max-width: 1069px) {
                     #imageslideshow1 {
-                    max-width: 20%;
-                    max-height:20%;
+                    max-width: 100%;
+                    max-height:100%;
                     }
                   div#imageslideshow1 img {
                    margin: 0 !important;
@@ -472,7 +468,7 @@
                   @media (max-width: 200px) {
                    #imageslideshow1 {
                     max-width: 100%;
-                    max-height:50%;
+                    max-height:100%;
                     }
                   div#imageslideshow1 img {
                    margin: 0 !important;
@@ -531,10 +527,11 @@
             </div>
       <button class="collapsible">Club Fairs</button>
               <div class="content">
-                <p><h5>text</h5><p></p>
+                <p><h5>We have been expanding our club over the past few years, having a net gain of 10 students! We love having more kids interested in STEM and our experiments and activities. Keeping within 25 members allows us to have very individualized experiments, which makes science the most fun. </h5><p></p>
                   <button class="pinkcollapsible">Freshmen Orientation</button>
                     <div class="pinkcontent">
-                      <p><h5>text</h5>
+                      <p><h5>We have gained members by attending various club fairs over the school year, like the freshmen orientation in 2019. Here we have senior members attracting new kids in the cafeteria.</h5>
+                        <img src="clubfair.jpg"><p>
                       </div>
                       <p>
                     </div>
@@ -612,23 +609,6 @@
     dots[slideshow.currentSlideIndex-1].className += " dactive";
   }
   </script>
-<script type="text/javascript">
-  var mygallery=new fadeSlideShow({
-   wrapperid: "imageslideshow1", //ID of blank DIV on page to house Slideshow
-   dimensions: [750, 500], //width/height of gallery in pixels. Should reflect dimensions of largest image (www.2createawebsites.com)
-     imagearray:  [
-     ["ET2.jpg"],
-     ["ET1.jpg"],
-     ["ET3.jpg"],
-     ["ET4.jpg"],
-     ],
-    displaymode: {type:'auto', pause:1000, cycles:0, wraparound:false},
-    persist: false, //remember last viewed slide and recall within same session?
-    fadeduration: 2000, //transition duration (milliseconds)
-    descreveal: "ondemand",
-    togglerid: ""
-    })
-   </script>
 
 <p></p><p><center><div class="footnote">
     <a href="https://www.instagram.com/shs.chem.club/" target="_blank"><img id="instalogo" src="instagram_logo.jpg">
