@@ -20,7 +20,113 @@
         <a href="contact.html">Contact Us</a>
     </div>
     <p></p>
+
+<style>
+  body{
+    font-family: sans-serif;
+  }
+  body{
+    font-family: sans-serif;
+  }
+  .collapsible {
+    background-color: #ff9500;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border-radius: 2px;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 17px;
+    font-family: sans-serif;
+  }
+
+  .active{
+    background-color: #ff9500;
+  }
+
+  .collapsible:hover {
+    background-color: #ffebc4;
+  }
+
+  .collapsible:after {
+    content: '\002B';
+    color: black;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+
+  .active:after {
+    content: "\002D";
+
+  }
+
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    width: 100%;
+    transition: max-height 0.2s ease-out;
+    background-color: #ffebc4;
+    text-align: center;
+    display: block;
+    margin:auto;
+    border-radius: 2px;
+    font-family: sans-serif;
+  }
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  img{
+    max-width: 100%;
+    maxHeight: 100%;
+  }
+  #label{
+    font-family: sans-serif;
+    font-size: 17px;
+    color:black;
+    font-style: bold;
+  }
+  </style>
+
 <h2> Apparel <br></h2>
+<h5> These are out recent custom made apparel. <br>The shirts were free for members, and the hoodies had a discounted price. <br>Hopefully we have funds to cover more in future years!</h5>
+<h5>
+  <div class="row">
+    <div class="column">
+      <button class="collapsible" id="label"><b>Short Sleeve 2019-2020</b><p><img src="shorts1.jpg"></button>
+        <div class="content">
+          <p><img src="shorts2.jpg"></p>
+        </div>
+        <p></p>
+      <button class="collapsible" id="label"><b>Hoodie (Gray) 2019-2020</b><p><img src="hoodie3.jpg"></button>
+        <div class="content">
+          <p><img src="hoodie4.jpg"></p>
+        </div>
+      </div>
+      <div class="column">
+      <button class="collapsible" id="label"><b>Hoodie (White) 2019-2020</b><p><img src="hoodie1.jpg"></button>
+        <div class="content">
+          <p><img src="hoodie2.jpg"></p>
+        </div>
+        <p></p>
+        <button class="collapsible" id="label"><b>Long Sleeve 2018-2019</b><p><img src="longs1.jpg"></button>
+          <div class="content">
+            <p><img src="longs2.jpg"></p>
+        </div>
+      </div>
+    </div>
 
 
 
@@ -31,10 +137,22 @@
 
 
 
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
 
-
-
-
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = 10*content.scrollHeight + "px";
+      }
+    });
+  }
+  </script>
 
 <style>
   body{
