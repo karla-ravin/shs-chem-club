@@ -436,70 +436,115 @@
                 <p><h5>
                   Engineering Tomorrow is an organization that aims to increase the amount of women and minorities in STEM fields. Stamford High's chem club was the first public school the organization has worked with, and we went to the Bruce Museum in Greenwich to study windmills and create some ourselves! We plan to continue working with these amazing people and our chaperones Mrs. Kaiser, Dr. DelGiudice, and Mrs. Downer.
                   <p>
-                    <script type="text/javascript" src="http://www.linkbuildingservices4sites.com/resources/slide-show.js"></script>
-                    <div id="imageslideshow1"></div>
-                    <script type="text/javascript">
-                    var mygallery=new fadeSlideShow({
-                     wrapperid: "imageslideshow1", //ID of blank DIV on page to house Slideshow
-                     dimensions: [550, 400], //width/height of gallery in pixels. Should reflect dimensions of largest image (www.2createawebsites.com)
-                       imagearray:  [
-                       ["ET2.jpg"],
-                       ["ET1.jpg"],
-                       ["ET3.jpg"],
-                       ["ET4.jpg"],
-                       ],
-                      displaymode: {type:'auto', pause:1000, cycles:0, wraparound:false},
-                      persist: false, //remember last viewed slide and recall within same session?
-                      fadeduration: 2000, //transition duration (milliseconds)
-                      descreveal: "ondemand",
-                      togglerid: ""
-                      })
-                     </script>
-                     <style type="text/css">
-                     body{
-                       margin: auto;
-                     }
-                    @media (max-width: 1069px) {
-                      #imageslideshow1 {
-                      max-width: 100%;
-                      max-height:100%;
-                      }
-                    div#imageslideshow1 img {
-                     margin: 0 !important;
-                     }
-                      }
+                    <style>
+     * {box-sizing: border-box}
+     body {
+     font-family: Verdana, sans-serif;
+     margin:0
+     }
+     .sSlides {display: none}
+     img {vertical-align: middle;}
+     .sllideshow-container {
+     max-width: 1000px;
+     position: relative;
+     margin: auto;
+     }
+     /* Next & previous buttons */
+       .prv, .nxt {
+       cursor: pointer;
+       position: absolute;
+       top: 50%;
+       width: auto;
+       padding: 16px;
+       margin-top: -22px;
+       color: white;
+       font-weight: bold;
+       font-size: 18px;
+       transition: 0.6s ease;
+       border-radius: 0 3px 3px 0;
+       user-select: none;
+       }
+       /* Position the "next button" to the right */
+       .nxt {
+       right: 0;
+       border-radius: 3px 0 0 3px;
+       }
+       /* On hover, add a black background color with a little bit see-through */
+       .prv:hover, .next:hover {
+       background-color: rgba(0,0,0,0.8);
+     }
+     /* Number text (1/3 etc) */
+     .numbertxt {
+     color: #ffffff;
+     font-size: 12px;
+     padding: 8px 12px;
+     position: absolute;
+     top: 0;
+     }
+     /* Fading animation */
+     .fade {
+     -webkit-animation-name: fade;
+     -webkit-animation-duration: 1.5s;
+     animation-name: fade;
+     animation-duration: 1.5s;
+     }
+     @-webkit-keyframes fade {
+     from {opacity: .4}
+     to {opacity: 1}
+     }
+     @keyframes fade {
+     from {opacity: .4}
+     to {opacity: 1}
+     }
+     /* On smaller screens, decrease text size */
+     @media only screen and (max-width: 300px) {
+     .prv, .nxt,.txt {font-size: 11px}
+     }
+   </style>
+ </head>
+ <body>
+   <div class="sllideshow-container">
+     <div class="sSlides fade">
+       <div class="numbertxt">1 / 4</div>
+       <img src="ET2.jpg" style="width:100%">
+     </div>
+     <div class="sSlides fade">
+       <div class="numbertxt">2 / 4</div>
+       <img src="ET1.jpg" style="width:100%">
+     </div>
+     <div class="sSlides fade">
+       <div class="numbertxt">3 / 4</div>
+       <img src="ET3.jpg" style="width:100%">
+     </div>
+     <div class="sSlides fade">
+       <div class="numbertxt">4 / 4</div>
+       <img src="ET4.jpg" style="width:100%">
+     </div>
+   </div>
+   <br>
+   <div style="text-align:center">
+     <span class="dot" onclick="currentsSlide(1)"></span>
+     <span class="dot" onclick="currentsSlide(2)"></span>
+     <span class="dot" onclick="currentsSlide(3)"></span>
+     <span class="dot" onclick="currentsSlide(4)"></span>
+   </div>
+   <script>
+     var sllideIndex = 0;
+     showsSlides();
 
-                    @media (max-width: 500px) {
-                     #imageslideshow1 {
-                      max-width: 100%;
-                      max-height:100%;
-                      }
-                    div#imageslideshow1 img {
-                     margin: 0 !important;
-                     }
-                    }
-
-                    @media (max-width: 700px) {
-                     #imageslideshow1 {
-                      max-width: 100%;
-                      max-height:100%;
-                     }
-                    div#imageslideshow1 img {
-                     margin: 0 !important;
-                     }
-                    }
-
-                    (max-width: 643px) {
-                    #imageslideshow1 {
-                      max-width: 100%;
-                      max-height:100%;
-                     }
-                    div#imageslideshow1 img {
-                     margin: 0 !important;
-                     }
-                    }
-                    </style>
-
+     function showsSlides() {
+       var i;
+       var sllides = document.getElementsByClassName("sSlides");
+       for (i = 0; i < sllides.length; i++) {
+         sllides[i].style.display = "none";
+       }
+       sllideIndex++;
+       if (sllideIndex > sllides.length) {sllideIndex = 1}
+       sllides[sllideIndex-1].style.display = "block";
+       setTimeout(showsSlides, 3500); // Change image every 2 seconds
+     }
+   </script>
+ </body>
                     <br>
                 </h5>
                 </div>
@@ -571,7 +616,7 @@
       if (pinkcontent.style.maxHeight){
         pinkcontent.style.maxHeight = null;
       } else {
-        pinkcontent.style.maxHeight = pinkcontent.scrollHeight + "px";
+        pinkcontent.style.maxHeight = 10*pinkcontent.scrollHeight + "px";
       }
     });
   }
@@ -584,6 +629,10 @@
   var slideshow2 = document.getElementById("slideshow2");
   slideshow2.currentSlideIndex = 1;
   showSlides(slideshow2.currentSlideIndex, slideshow2);
+
+  var slideshow3 = document.getElementById("slideshow3");
+  slideshow3.currentSlideIndex = 1;
+  showSlides(slideshow3.currentSlideIndex, slideshow3);
 
 
   function plusSlides(n, slideshow) {

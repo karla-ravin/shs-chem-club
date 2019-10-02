@@ -69,11 +69,10 @@
   https://www.SnapHost.com/captcha/ProCaptchaOverview.aspx -->
   <a href="http://www.snaphost.com/captcha/ReadyForms/" alt="email html forms" title="email html forms">
   </a></td></tr>
-  <tr valign="top"><td>Enter web form code*:
+  <tr valign="top"><td id="captcha">Enter web form code*:
   <input name="skip_CaptchaCode" type="text" style="width:80px;" maxlength="6" />
   </td><td>
-  <a><img id="CaptchaImage" alt="Contact Us form" title="HTML code for Contact Us form"
-  style="margin-left:20px;"
+  <a><img id="CaptchaImage" id="captcha"alt="Contact Us form" title="HTML code for Contact Us form"
   src="https://www.SnapHost.com/captcha/CaptchaImage.aspx?id=D2X25PNA3G6C&ImgType=2" /></a><br />
   <a href="#" onclick="return ReloadCaptchaImage('CaptchaImage');"><span style="font-size:12px;">reload image</span></a> </td></tr>
   </table> <br />
@@ -82,10 +81,13 @@
   </td></tr>
   </table><br />
   </form>
-  
+
 <style>
   body{
     font-family: sans-serif;
+  }
+  td{
+    margin-left: 500px;
   }
   form{
     outline: inherit;
